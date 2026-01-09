@@ -23,36 +23,58 @@ public class TestAssignment extends BaseAssignment
     @DisplayName("Assignment Task #01")
     @Order(1)
     @Test()
-    public void searchTest() {
+    public void reverseTest() {
+
 
         int[] arr = {76,87,89,95,1,56,34,22};
-        int target = 33;
+        int[] revArr = {22,34,56,1,95,89,87,76};
 
-        Search ls = new Search(arr);
-        int actualResult = ls.linearSearch(target);
-        assertEquals(-1, actualResult);
-        assertEquals(6, ls.linearSearch(34));
-        assertEquals(0, ls.linearSearch(76));
-        assertEquals(7, ls.linearSearch(22));
-
+        Traverse tv = new Traverse(arr);
+        int[] actualResult = tv.inReverse();
+        assertArrayEquals(revArr, actualResult);
 
     }
+
     @DisplayName("Assignment Task #02")
     @Order(2)
     @Test()
-    public void stepsTest() {
+    public void insertTest() {
 
         int[] arr = {76,87,89,95,1,56,34,22};
-        int target = 33;
+        int value = 33;
+        int[] startArr = {33,76,87,89,95,1,56,34,22};
+        int[] endArr = {76,87,89,95,1,56,34,22,33};
+        int index = 3;
+        int[] indexArr = {76,87,89,33,95,1,56,34,22};
 
-        Search ls = new Search(arr);
-        int actualResult = ls.stepsLinearSearch(target);
-        assertEquals(8, actualResult);
-        assertEquals(7, ls.stepsLinearSearch(34));
-        assertEquals(1, ls.stepsLinearSearch(76));
-        assertEquals(8, ls.stepsLinearSearch(22));
-
+        Insert in = new Insert(arr);
+        int[] actualResult = in.atStart(value);
+        assertArrayEquals(startArr, actualResult);
+        actualResult = in.atEnd(value);
+        assertArrayEquals(endArr, actualResult);
+        actualResult = in.atIndex(value, index);
+        assertArrayEquals(indexArr, actualResult);
     }
 
+
+    @DisplayName("Assignment Task #03")
+    @Order(3)
+    @Test()
+    public void deleteTest() {
+
+        int[] arr = {76,87,89,95,1,56,34,22};
+        int[] startArr = {87,89,95,1,56,34,22};
+        int[] endArr = {76,87,89,95,1,56,34};
+        int index = 3;
+        int[] indexArr = {76,87,89,1,56,34,22};
+
+        Delete del = new Delete(arr);
+        int[] actualResult = del.atStart();
+        assertArrayEquals(startArr, actualResult);
+        actualResult = del.atEnd();
+        assertArrayEquals(endArr, actualResult);                       
+        actualResult = del.atIndex(index);
+        assertArrayEquals(indexArr, actualResult);
+    }
 
 }
