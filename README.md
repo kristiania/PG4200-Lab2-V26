@@ -3,8 +3,14 @@
 
 ## Info
 
-> To work on the assignments, you can either download or clone this repository...
-> <img width="1059" height="555" alt="Screenshot 2026-01-04 at 16 19 09" src="https://github.com/user-attachments/assets/3d3b4c11-fcc2-4db9-aeda-b9b212cf72d3" />
+> To work on the assignments, you should clone this repository...
+> <img width="1035" height="555" alt="image" src="https://github.com/user-attachments/assets/353b4038-42c1-4e7b-bb07-96c216ebadf0" />
+
+> ..then choose "new" and "project from version controll" in IntelliJ..
+>  <img width="898" height="178" alt="image" src="https://github.com/user-attachments/assets/efb9e1c7-1552-4744-b208-f89adf893c21" />
+
+>.. then copy it to "URL" and choose your preferred "Directory" and press "clone".
+> <img width="778" height="614" alt="image" src="https://github.com/user-attachments/assets/4360a359-8344-4d3c-9652-5c0a64c35f43" />
 
 >  you find the lab exercises in the `src/main/java/assignment` folder. To test your code, you will find the test setup
 in the `src/test/java/assignment/TestAssignment.java` folder. There you can choose to run all tests at once or run them one by one.
@@ -26,16 +32,10 @@ in the `src/test/java/assignment/TestAssignment.java` folder. There you can choo
 
 ## Preparations
 
-### Step 1
-
 - Download JetBrains Toolbox
 - Download or update IntelliJ to Community Edition 2025 eller 2025EAP
-
-### Step 2
-
-Create a new project in IntelliJ with the following information:
-- Build system: IntelliJ
-- JDK: opendJDK-25
-- Download if needed
-- No sample code
+- Create your own github account: https://github.com/
+- Connect IntelliJ with your github account: https://www.jetbrains.com/help/idea/set-up-a-github-account.html
+- More on cloning in IntelliJ: https://www.jetbrains.com/help/idea/manage-projects-hosted-on-github.html#clone-from-GitHub
+- More on version kontrol https://www.jetbrains.com/help/idea/version-control-integration.html
 
